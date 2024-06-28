@@ -1,0 +1,332 @@
+/* Fonts */
+
+/* Fonts som har lite mer "hav/surf-tema" som används i första hand */
+@font-face {
+    font-family: 'Pacifico';
+    src: url(../fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* Grundregler som gäller oavsett skärmstorlek */
+html {
+    font-size: 110%;
+}
+
+body {
+    font-family: "Quicksand", Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.375;
+    color: #212931;
+    background: url(../bilder/surf1.jpeg) no-repeat fixed; /* Bild tagen från unsplash */
+    background-size: 100% auto;
+}
+
+/* Headers */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem auto 8rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    color: #cee4f7;
+    border: 5px solid #cee4f7;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: rgba(0, 112, 116, 0.8);
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+header p {
+    color: #fff;
+    font-size: 2.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Navigationen */
+nav {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    height: 4rem;
+    line-height: 4rem;
+    margin: -4rem auto 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a {
+    padding: 0 2rem;
+    color: rgb(0, 93, 100);
+    font-size: 2rem;
+}
+
+nav a:hover, nav a:focus {
+    color: #005c4c;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+/* Mains utseende */
+main {
+    background-color: #fff;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+main section {
+    padding: 2rem 4rem 4rem;
+}
+
+
+/* Product sektionen */
+#products {
+    display: grid;
+    justify-items: center;
+}
+
+#products > article {
+    width: 90%;
+    padding-top: 3rem;
+}
+
+#products img {
+    width: 100%;
+}
+
+article.promote {
+    background-color: #cee4f7;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* Headings  */
+h1, h2, h3 {
+    font-family: "Pacifico", Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #00515c;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#products h3 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    color: #007379;
+}
+
+/* Paragrafer */
+p {
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #cee4f7;
+    max-width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Classes sektionen */
+#classes h2 {
+    text-align: center;
+}
+
+/* Tabell  */
+table {
+    width: 100%;
+    border-spacing: 0;
+    background-color: #cee4f7;
+    margin: 0 auto;
+    max-width: 95%;
+    text-align: center;
+}
+
+th, td {
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #4fc3f7;
+}
+
+th {
+    color: #10303a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border-bottom: 2px solid #0288d1;
+    background-color: #b2ebf2;
+}
+
+tr:hover {
+    background-color: #b2ebf2;
+}
+
+th:hover {
+    background-color: #4fc3f7;
+}
+
+#story {
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    max-width: 80%;
+    background: #cee4f7;
+    border-radius: 8px;
+}
+
+#story h2, #story h3 {
+    margin: 1.5rem 0;
+    color: #00515c;
+    text-align: center;
+    width: 100%;
+}
+
+#story img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+#story p {
+    line-height: 1.6;
+    width: 100%;
+}
+
+#story a {
+    color: #005c4c;
+    text-decoration: underline;
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: #ffffffac;
+    border-radius: 20px;
+    margin: 4rem auto;
+    padding-top:1rem;
+    max-width: 40rem;
+    text-align: center;
+}
+
+#newsletter p {
+    font-family: cursive;
+    text-align:center;
+    font-size: 1.5rem;
+}
+
+#newsletter ul {
+    line-height: 2;
+}
+
+form {
+    width: 30rem;
+    margin: 1rem auto 0;
+}
+
+label {
+    width: 10rem;
+    text-align: right;
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+input[type="submit"] {
+    background-color: rgba(0, 112, 116, 0.8);
+    font-size: 1.5rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+    margin: 0.8rem 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #00b5cd;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+/* Bilder */
+img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+img:hover, img:focus {
+    transform: scale(1.5)
+}
+
+/* Media queries för olika skärmstorlekar */
+@media (min-width: 1024px) and (max-width: 2000px) {
+    #products {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0.5rem;
+    }
+}  
+
+@media (min-width: 821px) and (max-width: 1023px) {
+    #products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 0.5rem;
+    }
+
+    main p, #classes td {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 820px) {
+    #products {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 0.5rem;
+    }
+    
+    main p, #classes td {
+        font-size: 1.3rem;
+    }
+
+    #products img {
+        width: 75%;
+    }
+}
